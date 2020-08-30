@@ -35,6 +35,7 @@ class ShortcutConfigureActivity : BaseActivity(), ElementPickerDialog.ElementPic
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setResult(RESULT_CANCELED)
+        supportActionBar?.subtitle = getString(R.string.widget_select_profile)
         setContentView(R.layout.base_widget_configure)
 
         userList = findViewById(R.id.recyclerview_daily_messages_widget_configure_profile_list)
